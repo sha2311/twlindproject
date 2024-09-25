@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+   .Card_Caption{
+    @apply bg-black text-white px-1.5 py-0.5 text-xs uppercase rounded-sm dark:bg-[#5677ac];
+   }
+   .news{
+            @apply  flex flex-col md:flex-row p-2 md:p-4 items-center gap-6 border border-[#DDE2E5] mt-5 hover:scale-105 transition-all duration-300 cursor-pointer;
+   }
+   .card_heading{
+    @apply font-semibold pt-4 md:pt-8 pb-4 text-[#333333] text-xl md:text-2xl dark:text-white;
+   }
+
+   .right_tag{
+    @apply bg-[#5677ac26]
+    text-xs md:text-sm text-black px-1.5 py-0.5 rounded-sm uppercase hover:bg-black hover:text-white transition-all cursor-pointer dark:bg-[#5677ac] dark:hover:bg-black;
+   }
+   .news_tag{
+      @apply bg-[#e6ebf3] text-center w-full font-medium py-2 md:py-4 md:text-lg rounded-full hover:bg-slate-300 transition-all hover:scale-105 duration-300 cursor-pointer;
+   }
+}
